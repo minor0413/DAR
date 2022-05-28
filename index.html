@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width,initial-scale=1" name="veiwport">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+     $(function () {
+            $("#travel").hide();
+            $("#lifeplan").hide();
+        });
+
+        $(function () {
+            $("#MAINON").on("click", function () {
+                $("#main").show();
+                $("#travel").hide();
+                $("#lifeplan").hide();
+            })
+
+        })
+        $(function () {
+            $("#SECONDON").on("click", function () {
+                $("#main").hide();
+                $("#travel").show();
+                $("#lifeplan").hide();
+            })
+
+        })
+        $(function () {
+            $("#THIRDON").on("click", function () {
+                $("#main").hide();
+                $("#travel").hide();
+                $("#lifeplan").show();
+            })
+
+        })
+
+
+    </script>
+
+    <style>
+        #buttons {
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: right;
+        }
+
+        .name {
+            font-size: 25px;
+            font-weight: bold;
+            float: left;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            height: 100%;
+        }
+
+        .start {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            height: 100%;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:focus {
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: none;
+        }
+
+        div.main1 {
+            width: 100%;
+            height: 200px;
+        }
+
+        div.image {
+            width: 40%;
+            float: left;
+        }
+
+        div.text {
+            width: 50%;
+            float: right;
+        }
+
+        .text2 {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .my {
+            width: 100%;
+            clear: both;
+            text-align: right;
+
+        }
+
+        div.image4 {
+            width: 40%;
+            float: left;
+        }
+
+        div.image5 {
+            width: 40%;
+            float: right;
+        }
+
+        @media (max-width:1000px) {
+            div.image {
+                width: 100%;
+                float:none;
+            }
+
+            div.text {
+                width: 100%;
+                float:none;
+
+
+            }
+
+            div.image4 {
+                width: 100%;
+                float:none;
+
+            }
+
+            div.image5 {
+                width: 100%;
+                float:none;
+
+            }
+            .container{
+                float:none;
+            }
+            body{
+                background-color: aqua;
+            }
+
+        }
+
+        .my2 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+            color: seagreen
+        }
+
+        .text3 {
+            text-align: left;
+        }
+
+        .text4 {
+            font-size: 15px;
+        }
+
+        .text5 {
+            text-align: left;
+        }
+
+        .clear {
+            clear: both;
+            text-align: left;
+        }
+        .text6{
+            text-align: left;
+            line-height: 40px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    </div>
+    <div class="start">
+        <div class="start2">
+            <a class="name" href="">DANJO LEE</a>
+            <p id="buttons">
+                <span id="MAINON"><a href="#main">MAIN</a></span>
+                <span id="SECONDON"><a href="#travel">TRAVEL</a></span>
+                <span id="THIRDON"><a href="#lifeplan">LIFEPLAN</a></span>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="main">
+            <div>
+                <div class="image">
+                    <img src="./danjo.jpg" width="100%">
+                </div>
+                <div class="text">
+                    <h2>자기 소개 </h2>
+                    <p class="text2">
+                        안녕하세요.<br> 저의 홈페이지에 오신것을 환영합니다.<br>
+                        저는 현재 강원대학교 19학번 컴퓨터정보통신공학과에 2학년으로 재학중인 이단조 입니다.<br>
+                        저는 현재 JAVA와 PYTHON, HTML을 공부하고 있으며, 보안 개발자와 게임 개발자 등에 관심이 있습니다.<br>
+
+                    </p>
+                    <h2>나의 취미</h2>
+
+                    <p class="text2">
+                        저의 취미는 여행 다니기와 스피커로 노래를 틀고 듣는것,<br>
+                        종이책 읽기입니다. <br>
+                        특히 저는 여행에 관심이 많습니다.<br>
+                        여행코스 만들기와 구글맵으로 경로를 보고 구경하는것을 좋아합니다.
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <div class="my" style="margin-top:10px">
+                    <a class="my2" href="mailto:danjo13@naver.com" target="_blank">danjo13@naver.com</a>
+                    <br>
+                    <a class="my2" href="https://www.instagram.com/minor_9_9" target="_blank">instagram</a>
+                    <br>
+                    <a class="my2">Tel : 010-4141-7358</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div id="travel">
+        <div class="container">
+            <div>
+                <div class="text3">
+                    <h2>나의 취미 : 여행에 대하여</h2>
+                    <p class="text4">저는 어디든 여행 다니는 것을 좋아합니다. 국내여행, 유럽, 동남아, 일본, 등
+                        특히 해외여행은 가족들, 친구들과 함께 평소에 느끼지 못했던 감성, 보지 못했던 풍경, 익숙하지 않은곳에서
+                        일행들과 쌓이는 유대감, 새로운 인연을 만나는 설레임 등 좋은 경험이 됩니다.
+                    </p>
+                    <hr>
+                </div>
+
+                <div>
+                    <h3>인상 깊었던 3가지 여행</h3>
+                    <div class="text5">
+                        <h4>첫번째 : 2008년 8월 후쿠오카 여행</h4>
+                        <hr>
+
+                        <p>인상 깊었던 여행 중 첫번쨰는 2008년에 간 일본 후쿠오카 여행이었습니다.
+                            당시엔 나이가 어려 부모님을 따라다니는 여행이었지만 패키지 여행이 아닌 자유여행으로
+                            아버지께서 직접 여행계획을 세운 여행이었습니다. 여행의 내용이 좋았던것도 있지만,
+                            직접 계획을 세우고 자유롭게 돌아다니는 저에게 자유여행이라는 것을 알려준 여행이기에
+                            인상 깊었던 여행이었습니다.
+                        </p>
+                        <hr>
+                        <div class="container">
+                            <div class="image4">
+                                <img src="./jap.jpg" width="100%">
+                            </div>
+                            <div class="image5">
+                                <img src="./jap2.jpg" width="100%">
+                            </div>
+                            <p class="clear">당시 여행계획의 일부와 사진</p>
+                            <hr>
+                        </div>
+                        <h4>두번째 : 2019년 1월 도쿄 여행</h4>
+                        <hr>
+                        <p>인상 깊었던 여행 두번째는 2019년 도쿄 여행이었습니다 그 여행은 친구들과 함께 갔었던 첫번째
+                            해외여행이었고 지금 까지 갔던 가족들과의 여행과는 다른 친구들과 간다는점에서 조금 색다랐던 여행
+                            이었습니다. 지금까지는 아버지와 함께 계획을 짜고 여행경비도 대주셨지만, 이번여행은 내가 혼자 계획을
+                            짜고 여행경비도 내가 낸다는 점에서 느낌이 새로웠습니다.
+                        </p>
+                        <div class="container">
+                            <div class="image4">
+                                <img src="./jap3.jpg" width="100%">
+                            </div>
+                            <div class="image5">
+                                <img src="./jap4.jpg" width="100%">
+                            </div>
+                            <p class="clear">당시 여행 사진</p>
+                            <hr>
+                            <div class="container">
+                                <h4 class="text3">세번째 : 2019년 7월 세부여행</h4>
+                                <hr>
+                                <p class="text3">
+                                    인상 깊었던 여행 중 마지막은 2019년 세부여행입니다. 이때에 세부여행은 우리가족, 친구 끼리가 아닌
+                                    아버지의 친구분들과 그가족들과 함께 간 여행이었습니다. 물론 어릴때 몇번 봐서 모르는 사람들은 아니였지만,
+                                    자주보던 사이는 아니었기에 색다른 경험이었고 좋았습니다.
+                                </p>
+                                <div class="container">
+                                    <div class="image4">
+                                        <img src="./pl.jpg" width="100%">
+                                    </div>
+                                    <div class="image5">
+                                        <img src="./pl2.JPG" width="100%">
+                                    </div>
+                                    <p class="clear">당시 여행 사진</p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+        <div id="lifeplan">
+            <div class="container">
+               <div class="text3">
+                   <h3>대학 입학 후, 앞으로의 계획</h3>
+                   <hr>
+               </div>
+               <div class="text6">
+                   <ul>
+                       <li>2019년도 강원대학교 자유전공학부 입학 O</li>                      
+                       <li>2020년 컴퓨터 정보통신공학과 전공선택 O</li> 
+                       <li>2020년 ~ 2021년 군입대 O</li>
+                       <li>공기업 취직 목표</li>
+                       <li>컴퓨터 활용 능혁 1,2급 취득</li>
+                       <li>한국사 능력시험 2급 취득</li>
+                       <li>한국어 능력시험</li>
+                       <li>포트 폴리오 만들기</li>
+                       <li>각종 대회,공모전 참가하기</li>
+                       <li>AKPK 자산 재무 설계사 취득</li>
+                       <li>공인 GTQ 자격 - 포토샵</li>
+                       <li>2학년 마치고 정보처리 산업기사 취득</li>
+                       <li>2학년 내에 토익 700점 이상, 토익말하기 레벨 6이상 취득</li>
+                       <li>4학년 마치고 정보처리 기사 취득</li>
+                                  
+                   </ul>
+               </div>
+
+
+            </div>
+        </div>
+
+
+</body>
+
+
+</html>
